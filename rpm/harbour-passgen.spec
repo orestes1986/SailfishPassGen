@@ -14,7 +14,7 @@ Name:       harbour-passgen
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    A password generator
 Version:    0.1
-Release:    6
+Release:    7
 Group:      Qt/Qt
 License:    LICENSE
 URL:        http://example.org/
