@@ -30,7 +30,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../crypt.js" as CrptMyne
+import "../js/crypt.js" as CrptMyne
 
 Page {
     id: page01
