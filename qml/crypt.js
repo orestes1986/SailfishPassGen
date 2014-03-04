@@ -11,10 +11,10 @@ function hsore(str, noChar){
     while (str[k]){
         var l = 0;
         while (str[l]){
-            crpt[0] += Math.abs(str.charCodeAt(l) - str.charCodeAt(k));
-            crpt[1] += Math.abs(str.charCodeAt(l) + str.charCodeAt(k));
-            crpt[2] += Math.abs(str.charCodeAt(l) + str.charCodeAt(l));
-            crpt[3] += Math.abs(str.charCodeAt(k) + str.charCodeAt(k));
+            crpt[0] += Math.abs((Math.pow(str.charCodeAt(l), (1/2))*l) - (Math.pow(str.charCodeAt(k), (1/9)))*k);
+            crpt[1] += Math.abs((Math.pow(str.charCodeAt(l), (1/3))*l) - (Math.pow(str.charCodeAt(k), (1/5)))*k);
+            crpt[2] += Math.abs((Math.pow(str.charCodeAt(l), (1/9))*l) - (Math.pow(str.charCodeAt(k), (1/3)))*k);
+            crpt[3] += Math.abs((Math.pow(str.charCodeAt(l), (1/5))*l) - (Math.pow(str.charCodeAt(k), (1/2)))*k);
             l++;
         }
         k++;
